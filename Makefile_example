@@ -1,4 +1,4 @@
 check:
-	java -jar languagetool-commandline.jar -l en $(MAIN).tex | language_tool_to_make.py document.tex
+	java -jar languagetool-commandline.jar -l en document.tex | language_tool_to_make.py document.tex
 
 # Some options I use for LanguageTool:  -d WHITESPACE_RULE -m fr
